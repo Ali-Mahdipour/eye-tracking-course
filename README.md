@@ -1,16 +1,16 @@
 # eye-tracking-course
-This repository has been created for sharing part of the educational content related to the Eye-Tracking course that you have taken (or probably are interested to take 😉).\
+This repository has been created for sharing parts of the educational content related to the Eye-Tracking course that you have taken (or probably are interested to take 😉).\
 <br>
 Here are the headlines of the subjects that will be discussed during the course:
-### Session 1 (3 hours):<br>
-    1-1 An introduction on the history and taxonomy of eye tracking systems:
+### Session 1 (3 hours):
+    1-1 An introduction on the history and taxonomy of eye tracking systems
     1-2 The theoretical foundations of the visual system and visual attention
     1-3 Psychophysics of the visual system
     1-4 The taxonomy of eye movements (saccades, vergence, etc.)
     1-5 Introduction to designing experimental research making use of eye tracking
     1-6 Basics of designing stimuli with regard to psychophysics
 ### Session 2 (3 hours):
-    2-1 The role of eye movements and their evaluation in basic, behavioral, and applied social and clinical research
+    2-1 The role of eye movements in basic, behavioral, and applied social and clinical research
     2-2 The Role of eye tracking in brain maping with regard to psychophysics of human visual system
     2-3 Eye tracking calibration
     2-4 recording eye movement data
