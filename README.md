@@ -1,6 +1,7 @@
 # eye-tracking-course
 This repository has been created for sharing part of the educational content related to the Eye-Tracking course that you have taken (or probably are interested to take 😉).\
-<br>Here are the headlines of the subjects that will be discussed during the course:
+<br>
+Here are the headlines of the subjects that will be discussed during the course:
 ### Session 1 (3 hours):<br>
     1-1 An introduction on the history and taxonomy of eye tracking systems:
     1-2 The theoretical foundations of the visual system and visual attention
