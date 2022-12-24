@@ -1,6 +1,6 @@
 # eye-tracking-course
 This repository has been created for sharing part of the educational content related to the Eye-Tracking course that you have taken (or probably are interested to take 😉).\
-Here are the headlines of the subjects that will be discussed during the course:
+<br>Here are the headlines of the subjects that will be discussed during the course:
 ### Session 1 (3 hours):<br>
     1-1 An introduction on the history and taxonomy of eye tracking systems:
     1-2 The theoretical foundations of the visual system and visual attention
@@ -31,7 +31,7 @@ Here are the headlines of the subjects that will be discussed during the course:
     4-4 An introduction to quantitative analysis of eye movements 
     4-5 exporting quantitative preprocessing results
     4-6 Intrepretation of eye movement metrics and discussing their relation to cognition
-Session 5 (3 hours):
+### Session 5 (3 hours):
     5-1 Exporting the raw eye movement data
     5-2 Analyzing the raw eye movement data
     5-3 Introduction to an other eye movement analysis tool
@@ -39,7 +39,7 @@ Session 5 (3 hours):
     5-5 Introducing some of the open source eye movement analysis tools
     5-6 An introduction to statistical analysis of eye movement data
     5-7 Introducing statistical analysis and modeling tools availble in R
-Session 6 (3 hours):
+### Session 6 (3 hours):
     6-1 case study: decision making study
     6-2 case study: Eye-Tracking and GSR
     6-3 case study: infant occlusion test
