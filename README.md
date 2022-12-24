@@ -1,21 +1,21 @@
 # eye-tracking-course
-This repository has been created for sharing part of the educational content related to the Eye-Tracking course that you have taken (or probably are interested to take 😉).
+This repository has been created for sharing part of the educational content related to the Eye-Tracking course that you have taken (or probably are interested to take 😉).\
 Here are the headlines of the subjects that will be discussed during the course:
-Session 1 (3 hours):
+### Session 1 (3 hours):<br>
     1-1 An introduction on the history and taxonomy of eye tracking systems:
     1-2 The theoretical foundations of the visual system and visual attention
     1-3 Psychophysics of the visual system
     1-4 The taxonomy of eye movements (saccades, vergence, etc.)
     1-5 Introduction to designing experimental research making use of eye tracking
     1-6 Basics of designing stimuli with regard to psychophysics
-Session 2 (3 hours):
+### Session 2 (3 hours):
     2-1 The role of eye movements and their evaluation in basic, behavioral, and applied social and clinical research
     2-2 The Role of eye tracking in brain maping with regard to psychophysics of human visual system
     2-3 Eye tracking calibration
     2-4 recording eye movement data
     2-5 An introduction to the pipline and taxonomy of quantitative analyses of eye movements
     2-6 An introduction to the pipline and taxonomy of qualitative analyses of eye movements
-Session 3 (3 hours):
+### Session 3 (3 hours):
     3-1 Installing an eye tracking software (Tobii Pro Lab—trial version)
     3-2 Introducing the common configuration of the eye tracking systems
     3-3 Calibrating the eye tracker
@@ -24,7 +24,7 @@ Session 3 (3 hours):
     3-6 Introducing the User Interface of the software
     3-7 Introducing the configuration of different types of the stimuli
     3-8 Qualitative analyses of the eye movements
-Session 4 (3 hours):
+### Session 4 (3 hours):
     4-1 Segmenting and exporting different types of qualitative outputs
     4-2 Interpreting the qualitative results 
     4-3 Areas of Interest (AOIs) and setting them up
