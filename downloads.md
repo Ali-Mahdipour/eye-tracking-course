@@ -1,4 +1,4 @@
-Here we list the softwares that you will need to download and install.
+Here we list the software packages and files that you will need to download and install.
 # Tobii Pro Lab software package
 Use [this] link for downloading the trial version of the Tobii Pro Lab (will work for one month).
 
