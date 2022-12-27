@@ -15,4 +15,4 @@ You can find the link for macOS installer [here](https://posit.co/download/rstud
 
 # Demo projects
 You can download demo projects using the [this link]. 
-**Caution:** You will need to send an access request. In the request message write your full-name in latin (indentical to your registration full-name). 
+**Caution:** You will need to send an access request. In the request message write your full-name in Latin (indentical to your registration full-name). 
