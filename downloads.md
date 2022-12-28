@@ -14,5 +14,5 @@ For windows download and install [this](https://download1.rstudio.org/electron/w
 You can find the link for macOS installer [here](https://posit.co/download/rstudio-desktop/). 
 
 # Demo projects
-You can download demo projects using the [this link]. 
+You can download demo projects using the [this link](https://drive.google.com/drive/folders/1Xkv60ouUshc9Wv50oEPDQ1L320UB9PmY?usp=share_link). 
 **Caution:** You will need to send an access request. In the request message write your full-name in Latin (indentical to your registration full-name). 
