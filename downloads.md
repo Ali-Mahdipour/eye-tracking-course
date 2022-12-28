@@ -1,6 +1,7 @@
 **Here we list the software packages and files that you will need to download and install.**
 # Tobii Pro Lab software package
-Use [this](https://s3.amazonaws.com/lynx.tobii/TobiiProLab_1.181.37603_x64.exe) link for downloading the trial version of the Tobii Pro Lab (will work for one month).
+Use [this](https://drive.google.com/file/d/1ok5ALOYDoUTw05rorN5DiLSsSdmTrriE/view?usp=share_link) link for downloading the trial version of the Tobii Pro Lab (will work for one month).
+**Caution:** You will need to send an access request. In the request message write your full-name in Latin (identical to your registration full-name).
 
 # GitHub Desktop software package
 For windows download and install [this](https://central.github.com/deployments/desktop/desktop/latest/win32) and for macOS [this](https://central.github.com/deployments/desktop/desktop/latest/darwin) file.
