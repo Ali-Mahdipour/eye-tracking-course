@@ -15,4 +15,7 @@ You can find the link for macOS installer [here](https://posit.co/download/rstud
 
 # Demo projects
 You can download demo projects using the [this link](https://drive.google.com/drive/folders/1Xkv60ouUshc9Wv50oEPDQ1L320UB9PmY?usp=share_link). 
-**Caution:** You will need to send an access request. In the request message write your full-name in Latin (indentical to your registration full-name). 
+**Caution:** You will need to send an access request. In the request message write your full-name in Latin (indentical to your registration full-name).
+
+# Cloning this repository
+In order to clone a repository using GitHub Desktop you will neet ot first [create a GitHub account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) which is so simple. For a guide on how to clone this repository using GitHub desktop see this [link](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop)
