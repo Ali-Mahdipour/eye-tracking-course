@@ -1,0 +1,35 @@
+---
+title: "Decision Making - Eye Tracking"
+author: "Ali G. Mahdipour"
+date: '2022-12-27'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# importing libraries
+```{r lib}
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+```
+
+# Reading Raw Data
+``` {r raw}
+unzip("./Data/decision making/Food Decision Making Data Export.zip", exdir = "./temp")
+raw.data <- read.table("./temp/Food Decision Making Data Export.tsv", sep = "\t", header = TRUE)
+file.remove("./temp/Food Decision Making Data Export.tsv")
+```
+
+# Reading metrics
+
+```{r metrics}
+metrics <- read.table("./Data/decision making/Food Decision Making Metrics.tsv", sep = "\t", header = TRUE)
+metrics.data <- metrics[,c(1:11, 1275:1293)]
+metrics.data |>  dplyr::group_by(gender, age_group) |> ggplot2::ggplot() +
+  aes(x = gender, y = Amplitude_of_first_saccade, fill = gender) +
+  geom_boxplot()
+```
+
