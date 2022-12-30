@@ -31,5 +31,16 @@ metrics.data <- metrics[,c(1:11, 1275:1293)]
 metrics.data |>  dplyr::group_by(gender, age_group) |> ggplot2::ggplot() +
   aes(x = gender, y = Amplitude_of_first_saccade, fill = gender) +
   geom_boxplot()
+
+metrics.data <- metrics[,c(1:11, 1275:1293)]
+metrics.data |>  dplyr::group_by(gender, age_group) |> ggplot2::ggplot() +
+  aes(x = gender, y = Average_whole.fixation_pupil_diameter, fill = gender) +
+  geom_boxplot()
+
+metrics.data |>  dplyr::group_by(TOI, gender, age_group) |> ggplot2::ggplot() +
+  aes(x = TOI, y = Average_whole.fixation_pupil_diameter, fill = TOI) +
+  geom_boxplot()
+
+
 ```
 
