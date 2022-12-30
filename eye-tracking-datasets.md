@@ -1,0 +1,20 @@
+**Here we list some of the publicly available eye tracking datasets:**
+
+
+1. Event Based, Near Eye Gaze Tracking Beyond 10,000Hz [link](https://github.com/aangelopoulos/event_based_gaze_tracking#event-based-near-eye-gaze-tracking-beyond-10000hz)
+2. REFLACX dataset [link](https://github.com/ricbl/eyetracking)
+3. VED100-A-Video-Based-Eye-Tracking-Dataset-on-Visual-Saliency-Detection [link](https://github.com/spzhubuaa/VED100-A-Video-Based-Eye-Tracking-Dataset-on-Visual-Saliency-Detection)
+4. CrowdFix dataset [link](https://github.com/MemoonaTahira/CrowdFix)
+5. Eye-Tracking-Art [link](https://github.com/neilmizzi/Eye-Tracking-Art/tree/master/dataset)
+6. Eye_Tracking_GreenHill_Dataset [link](https://github.com/ResearcherGA/GitHubRepo_EyeTracking)
+7. Eye-Tracking and Navigation Dataset [link](https://github.com/Murtada100/EyeVRDataset)
+8. Multi-modality dataset for Near-eye Gaze Tracking [link](https://github.com/InterestXx/HE-Gaze-Dataset)
+9. In-Car Eye Tracking—sample— [link](https://github.com/jfernandoghe/Dataset-GlasgowUni)
+10. 3D eye-tracking dataset in a virtual museum [link](https://github.com/YunzhanZHOU/EDVAM)
+11. Tracking Sustained Attention with Webcam-Based Eye Gaze and Blink Pattern Tracking [link](https://github.com/MultimodalLearningAnalytics/eye-gaze-blink-tracking)
+12. Innsbruck CNN Abstract Rule Eyetracking (ICARE) Dataset [link](https://github.com/rspiegl/icare-dataset)
+13. Cinematic Eye-Tracking Dataset [link](https://github.com/michelleklum/cs153-cinematic-feature-labeling)
+14. egocentric vision, eye-tracking and full body kinematics [link](https://github.com/abs711/The-way-of-the-future)
+15. Not all grammar errors are equally noticed [link](https://github.com/ResearchXX/ErrorDetection)
+16. A Virtual Reality Motion and Eye-Tracking Multi-Session Dataset [link](https://github.com/cschell/who-is-alyx)
+17. Cluster Analysis [link](https://github.com/melissaEYE/Cluster-Analysis)
