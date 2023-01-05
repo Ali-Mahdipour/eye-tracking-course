@@ -27,20 +27,108 @@ file.remove("./temp/Food Decision Making Data Export.tsv")
 
 ```{r metrics}
 metrics <- read.table("./Data/decision making/Food Decision Making Metrics.tsv", sep = "\t", header = TRUE)
+metrics.aoi <- read.table("./Data/decision making/Food Decision Making Metrics (AOI-based).tsv", sep = "\t", header = TRUE)
 metrics.data <- metrics[,c(1:11, 1275:1293)]
 metrics.data |>  dplyr::group_by(gender, age_group) |> ggplot2::ggplot() +
   aes(x = gender, y = Amplitude_of_first_saccade, fill = gender) +
   geom_boxplot()
 
+metrics.aoi$AOI |> table()
+
 metrics.data <- metrics[,c(1:11, 1275:1293)]
-metrics.data |>  dplyr::group_by(gender, age_group) |> ggplot2::ggplot() +
-  aes(x = gender, y = Average_whole.fixation_pupil_diameter, fill = gender) +
-  geom_boxplot()
 
-metrics.data |>  dplyr::group_by(TOI, gender, age_group) |> ggplot2::ggplot() +
-  aes(x = TOI, y = Average_whole.fixation_pupil_diameter, fill = TOI) +
-  geom_boxplot()
+buynotbuy <- metrics.aoi[metrics.aoi$AOI == "buy",]
 
+buynotbuy <- buynotbuy[,c("Recording", "Media", "AOI", "Number_of_mouse_clicks")]
+colnames(buynotbuy) <- c("Recording", "Media", "AOI_p", "MCC")
+metrics.aoi <- metrics.aoi |> filter(!TOI == "Entire Recording")
 
+metrics.aoi <- left_join(metrics.aoi, buynotbuy, by = c("Recording", "Media"))
+
+metrics.aoi <- metrics.aoi |> group_by(Recording, Media) |> mutate(decision = ifelse(sum(Number_of_mouse_clicks), "buy", "not-buy"), MCC_m = sum(MCC))
+
+metrics.aoi <- metrics.aoi[,c(1:10, 46, 71, 72, 11:45, 47:70)]
+
+table(metrics.aoi$MCC_m)
+
+# colmun names of metrics.aoi data frame
+colnames(metrics.aoi) |> data.frame() |> View()
+
+# AOI metrics analysis
+## Boxplot of total duration of fixations on AOIs
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Total_duration_of_fixations, fill = AOI) |> geom_boxplot()
+
+## Violin plot of total duration of fixations on AOIs
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Total_duration_of_fixations, fill = AOI) |> geom_violin()
+
+## Boxplot of total duration of fixations on AOIs by participant group
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Total_duration_of_fixations, fill = gender) |> geom_boxplot()
+
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Total_duration_of_fixations, fill = age_group) |> geom_boxplot()
+
+---------------
+  ## Boxplot of average pupil diameter on AOIs
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Average_pupil_diameter, fill = AOI) |> geom_boxplot()
+
+## Violin plot of average pupil diameter on AOIs
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Average_pupil_diameter, fill = AOI) |> geom_violin()
+
+## Boxplot of average pupil diameter on AOIs by participant group
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Average_pupil_diameter, fill = gender) |> geom_boxplot()
+
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Average_pupil_diameter, fill = age_group) |> geom_boxplot()
+------------
+    ## Boxplot of average whole fixation pupil diameter on AOIs
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Average_whole.fixation_pupil_diameter, fill = AOI) |> geom_boxplot()
+
+## Violin plot of average whole fixation pupil diameter on AOIs
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Average_whole.fixation_pupil_diameter, fill = AOI) |> geom_violin()
+
+## Boxplot of average whole fixation pupil diameter on AOIs by participant group
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Average_whole.fixation_pupil_diameter, fill = gender) |> geom_boxplot()
+
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = AOI, Average_whole.fixation_pupil_diameter, fill = age_group) |> geom_boxplot()
+
+## linear regression 
+# effect of first fixation duration on average pupil diameter in whole fixations by gender
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = Duration_of_first_fixation, y =Average_whole.fixation_pupil_diameter, color = gender) |> geom_smooth(method = "glm")
+
+# effect of first fixation duration on average pupil diameter in whole fixations by by age group
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = Duration_of_first_fixation, y =Average_whole.fixation_pupil_diameter, color = age_group) |> geom_smooth(method = "glm")
+
+metrics.aoi <- metrics.aoi |> mutate(MCC = factor(MCC))
+
+# choice by TFD on AOI
+metrics.aoi |> dplyr::group_by(AOI, gender, MCC) |>
+  ggplot2::ggplot() + aes(x = AOI, Total_duration_of_fixations, fill = MCC) |> geom_boxplot()
+
+# effect of DoFF on Pupil
+metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
+  ggplot2::ggplot() + aes(x = Duration_of_first_fixation, y =Average_whole.fixation_pupil_diameter, color = MCC) |> geom_smooth(method = "glm")
 ```
+```{r}
+metrics.aoi$gender <- factor(metrics.aoi$gender)
+metrics.aoi$choice <- ifelse(metrics.aoi$MCC == 1, TRUE, FALSE) 
+model <- glm(choice ~ Average_whole.fixation_pupil_diameter + Total_duration_of_fixations + gender , data = metrics.aoi, family = gaussian)
+
+summary(model)
+sjPlot::tab_model(model)
+
+report::report(model)
+```
+
 
