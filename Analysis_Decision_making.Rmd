@@ -11,6 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # importing libraries
 ```{r lib}
+# install.packages("tidyverse")
+# install.packages("ggplot2")
+# install.packages("dplyr")
+
 library(tidyverse)
 library(ggplot2)
 library(dplyr)
@@ -21,26 +25,26 @@ library(dplyr)
 unzip("./Data/decision making/Food Decision Making Data Export.zip", exdir = "./temp")
 raw.data <- read.table("./temp/Food Decision Making Data Export.tsv", sep = "\t", header = TRUE)
 file.remove("./temp/Food Decision Making Data Export.tsv")
+rm(raw.data)
 ```
 
 # Reading metrics
 
 ```{r metrics}
 metrics <- read.table("./Data/decision making/Food Decision Making Metrics.tsv", sep = "\t", header = TRUE)
+colnames(metrics)
+rm(metrics)
+
 metrics.aoi <- read.table("./Data/decision making/Food Decision Making Metrics (AOI-based).tsv", sep = "\t", header = TRUE)
-metrics.data <- metrics[,c(1:11, 1275:1293)]
-metrics.data |>  dplyr::group_by(gender, age_group) |> ggplot2::ggplot() +
-  aes(x = gender, y = Amplitude_of_first_saccade, fill = gender) +
-  geom_boxplot()
+
 
 metrics.aoi$AOI |> table()
-
-metrics.data <- metrics[,c(1:11, 1275:1293)]
 
 buynotbuy <- metrics.aoi[metrics.aoi$AOI == "buy",]
 
 buynotbuy <- buynotbuy[,c("Recording", "Media", "AOI", "Number_of_mouse_clicks")]
 colnames(buynotbuy) <- c("Recording", "Media", "AOI_p", "MCC")
+
 metrics.aoi <- metrics.aoi |> filter(!TOI == "Entire Recording")
 
 metrics.aoi <- left_join(metrics.aoi, buynotbuy, by = c("Recording", "Media"))
@@ -101,12 +105,14 @@ metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
 metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
   ggplot2::ggplot() + aes(x = AOI, Average_whole.fixation_pupil_diameter, fill = age_group) |> geom_boxplot()
 
+--------
+
 ## linear regression 
 # effect of first fixation duration on average pupil diameter in whole fixations by gender
 metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
-  ggplot2::ggplot() + aes(x = Duration_of_first_fixation, y =Average_whole.fixation_pupil_diameter, color = gender) |> geom_smooth(method = "glm")
+  ggplot2::ggplot() + aes(x = Duration_of_first_fixation, y =Average_whole.fixation_pupil_diameter, fill = gender) |> geom_smooth(method = "glm")
 
-# effect of first fixation duration on average pupil diameter in whole fixations by by age group
+# effect of first fixation duration on average pupil diameter in whole fixations by age group
 metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
   ggplot2::ggplot() + aes(x = Duration_of_first_fixation, y =Average_whole.fixation_pupil_diameter, color = age_group) |> geom_smooth(method = "glm")
 
@@ -120,13 +126,15 @@ metrics.aoi |> dplyr::group_by(AOI, gender, MCC) |>
 metrics.aoi |> dplyr::group_by(TOI, AOI, gender, age_group) |>
   ggplot2::ggplot() + aes(x = Duration_of_first_fixation, y =Average_whole.fixation_pupil_diameter, color = MCC) |> geom_smooth(method = "glm")
 ```
+
+# statistical modeling (GLM)
 ```{r}
 metrics.aoi$gender <- factor(metrics.aoi$gender)
 metrics.aoi$choice <- ifelse(metrics.aoi$MCC == 1, TRUE, FALSE) 
 model <- glm(choice ~ Average_whole.fixation_pupil_diameter + Total_duration_of_fixations + gender , data = metrics.aoi, family = gaussian)
 
 summary(model)
-sjPlot::tab_model(model)
+sjPlot::tab_model(model, show.se = TRUE, show.df = TRUE)
 
 report::report(model)
 ```
