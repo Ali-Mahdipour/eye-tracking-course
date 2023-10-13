@@ -6,8 +6,8 @@ Use [this](https://drive.google.com/file/u/0/d/131PknMarGmlLqWssh_9XzUyfBtbk1ghk
 # GitHub Desktop software package
 For windows download and install [this](https://central.github.com/deployments/desktop/desktop/latest/win32) and for macOS [this](https://central.github.com/deployments/desktop/desktop/latest/darwin) file.
 
-# R 4.2.2 
-For windows download and install [this](https://cran.rstudio.com/bin/windows/base/R-4.2.2-win.exe) file.<br>
+# R 4.2.3 / 4.2.2
+For windows download and install [this](https://cran.r-project.org/bin/windows/base/old/4.2.3/R-4.2.3-win.exe) file.<br>
 For macOS Big Sur download and install [this](https://cran.rstudio.com/bin/macosx/big-sur-arm64/base/R-4.2.2-arm64.pkg) and for High Sierra [this](https://cran.rstudio.com/bin/macosx/base/R-4.2.2.pkg) file.
 
 # Rstudio software package 
