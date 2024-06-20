@@ -2,7 +2,7 @@
 # Tobii Pro Lab and Tobii Studio software packages
 Use [this](https://drive.google.com/file/d/1mJHSgWrOfuOUtn7IRFSn7o8hcbS0jLz4/view?usp=sharing) link for downloading the trial version of the Tobii Pro Lab (will work for one month).<be>
 Also, use [this](https://drive.google.com/file/d/1uGyZdCEd503LD0BKrSI670DT3yryXuVC/view?usp=sharing) link to download the Tobii Studio software package.
-**Caution:** You will need to send an access request. In the request message write your full-name in Latin (identical to your registration full-name).
+**Caution:** You will need to send an access request. In the request message write your full-name in Latin (identical to your registration full-name). <be>
 
 # GitHub Desktop software package
 For windows download and install [this](https://central.github.com/deployments/desktop/desktop/latest/win32) and for macOS [this](https://central.github.com/deployments/desktop/desktop/latest/darwin) file.
