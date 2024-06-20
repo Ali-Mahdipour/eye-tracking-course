@@ -1,6 +1,6 @@
 **Here we list the software packages and files that you will need to download and install.**
 # Tobii Pro Lab software package
-Use [this](https://drive.google.com/file/u/0/d/131PknMarGmlLqWssh_9XzUyfBtbk1ghk/view?usp=drive_link&pli=1) link for downloading the trial version of the Tobii Pro Lab (will work for one month).<br>
+Use [this](https://drive.google.com/file/d/1mJHSgWrOfuOUtn7IRFSn7o8hcbS0jLz4/view?usp=sharing) link for downloading the trial version of the Tobii Pro Lab (will work for one month).<br>
 **Caution:** You will need to send an access request. In the request message write your full-name in Latin (identical to your registration full-name).
 
 # GitHub Desktop software package
