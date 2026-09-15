@@ -1,0 +1,13 @@
+# NBML Eye-Tracking Workshop (Python stack) — Sep/Oct 2026
+# Requires Python 3.10+
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.13
+plotly>=5.18
+openpyxl>=3.1
+jupyter>=1.0
+ipykernel>=6.25
+statsmodels>=0.14
+pingouin>=0.5
+scipy>=1.11

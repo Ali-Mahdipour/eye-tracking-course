@@ -1,0 +1,18 @@
+name: eye-tracking-workshop
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy>=1.24
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - seaborn>=0.13
+  - plotly>=5.18
+  - openpyxl>=3.1
+  - jupyter
+  - ipykernel
+  - statsmodels>=0.14
+  - scipy>=1.11
+  - pip
+  - pip:
+      - pingouin>=0.5
