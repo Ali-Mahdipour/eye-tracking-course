@@ -1,0 +1,6 @@
+event_id,type,start_time,end_time,duration_s,norm_pos_x,norm_pos_y,dispersion,amplitude_deg,peak_velocity_deg_s,aoi,participant,recording
+1,fixation,0.0,1.8,1.8,0.25,0.4,0.015,,,left_panel,demo_p01,demo_rec_01
+2,saccade,1.8,2.1,0.3,0.5,0.48,,14.0,220.0,right_panel,demo_p01,demo_rec_01
+3,fixation,2.1,4.0,1.9,0.75,0.55,0.015,,,right_panel,demo_p01,demo_rec_01
+4,saccade,4.0,4.25,0.25,0.58,0.45,,16.0,260.0,right_panel,demo_p01,demo_rec_01
+5,fixation,4.25,5.0,0.75,0.4,0.35,0.015,,,left_panel,demo_p01,demo_rec_01
