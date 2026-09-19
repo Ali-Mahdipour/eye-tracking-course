@@ -68,3 +68,5 @@ Calibration & recording pipelines, Tobii Pro Lab qualitative/quantitative workfl
 ## License
 
 See [`LICENSE`](LICENSE). Respect NBML recording/copyright rules for workshop videos and shared recordings.
+
+Analysis training (4×1.5h Python labs): see `workshop/ANALYSIS_TRAINING.md` and `workshop/sessions/`.
