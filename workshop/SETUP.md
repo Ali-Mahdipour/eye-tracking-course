@@ -79,3 +79,11 @@ Larger Tobii-style TSVs from past courses are under `Data/decision making/` and 
 - **Notebook kernel missing:** select the `eye-tracking-workshop` kernel in Jupyter.
 - **Import path errors:** run notebooks with the repo root as the working directory, or adjust `DATA = Path("../../Data/demo")`.
 - **Plotly not showing:** use JupyterLab / classic Notebook; VS Code also works with the Python + Jupyter extensions.
+
+## Analysis training sessions
+
+```bash
+jupyter notebook workshop/sessions
+```
+
+Start with `S01_python_and_data_landscape.ipynb`. Full map: `workshop/ANALYSIS_TRAINING.md`.
