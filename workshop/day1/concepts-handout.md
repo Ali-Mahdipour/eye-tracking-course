@@ -67,14 +67,14 @@ Exported tables (gaze, fixations, pupil) feed **Excel** (quick summaries) and **
 
 ---
 
-## 7. Mini glossary (EN / FA cues)
+## 7. Mini glossary
 
-- Fixation / ثابت‌نگری  
-- Saccade / ساکاد  
-- Calibration / کالیبراسیون  
-- Area of Interest (AOI) / ناحیه مورد علاقه  
-- Dwell time / زمان اقامت  
-- Scanpath / مسیر اسکن  
+- **Fixation** — eyes “parked” to take in information  
+- **Saccade** — rapid jump between locations  
+- **Calibration** — teaching the system your personal eye-to-gaze mapping  
+- **Area of Interest (AOI)** — region you score for dwell / visits  
+- **Dwell time** — time spent looking in an AOI  
+- **Scanpath** — ordered sequence of fixations and saccades  
 
 ---
 
