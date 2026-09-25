@@ -1,0 +1,16 @@
+recording,stimulus,pct_idt_vs_ivt,pct_idt_vs_tobii,pct_ivt_vs_tobii,n_fix_ivt,n_fix_idt
+Recording1,cake,71.5,71.9,76.6,16,14
+Recording1,cereal,71.6,71.1,74.3,31,31
+Recording1,date,69.7,69.7,73.3,25,27
+Recording1,ice-cream,63.7,62.3,70.7,30,26
+Recording1,pizza,73.6,74.8,82.8,28,33
+Recording2,cake,68.8,73.0,77.0,35,39
+Recording2,cereal,71.6,76.4,79.1,28,30
+Recording2,date,59.8,73.4,64.7,29,28
+Recording2,ice-cream,73.0,71.7,77.2,40,39
+Recording2,pizza,81.1,82.0,86.7,24,28
+Recording3,cake,77.1,76.7,80.6,40,38
+Recording3,cereal,62.9,68.4,67.5,34,29
+Recording3,date,65.9,73.9,72.7,31,37
+Recording3,ice-cream,75.3,72.8,75.1,24,24
+Recording3,pizza,68.5,67.1,77.9,33,43
