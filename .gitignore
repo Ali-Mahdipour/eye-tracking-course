@@ -46,3 +46,6 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 *.Rproj
+
+# Large Tobii sample-level export (keep local / Desktop copy; too large for git)
+Data/food_decision_making/Food Decision Making Data Export.tsv

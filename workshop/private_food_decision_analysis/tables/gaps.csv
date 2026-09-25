@@ -1,0 +1,6 @@
+item,status,action
+Metrics XLSX AOI/fixation/click sheets,INCOMPLETE,Re-export Metrics with AOI-based intervals if you want vendor tables matching Pro Lab UI
+Food_Decision_Making_Metrics.tsv AOI column,INCOMPLETE (all NaN),"Re-export event metrics with AOI assignment enabled, or rely on Data Export AOI hit columns (already used)"
+Recording4 rich AOI scheme,MISSING from complete TSV / mismatched in XLSX,"If Recording4 is a real participant, re-export Data Export TSV including Recording4 with the SAME AOI package"
+Desktop TSV freshness,CONFIRMED by user = most complete export,Canonical: C:\Users\snapp\Desktop\Food Decision Making Data Export.tsv — keep Data/food_decision_making/ in sync
+Raw EDA/GSR for food task,NOT IN THESE FILES,Export if you want SCR analyses on this paradigm (separate from the GSR demo project)
