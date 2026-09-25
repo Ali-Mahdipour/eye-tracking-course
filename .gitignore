@@ -46,3 +46,7 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 *.Rproj
+
+# Local full Food Decision Making analysis (not for GitHub)
+workshop/private_food_decision_analysis/
+Data/food_decision_making/Food Decision Making Data Export.tsv
