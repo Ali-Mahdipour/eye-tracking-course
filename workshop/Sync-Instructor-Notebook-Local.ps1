@@ -7,7 +7,8 @@
   Target (default):
     C:\Users\snapp\Documents\Github\Workshop\2026-Sep-NBML-eye-tracking\eye-tracking-course\
 
-  Fetches branch: cursor/analysis-training-sessions-feaa
+  Fetches branch: cursor/fixation-classification-teaching-8573
+  (DIY I-VT + I-DT teaching sections; falls back if you pass -Branch)
   Notebook ends up at:
     workshop\private_food_decision_analysis\Food_Decision_Making_Full_Analysis.ipynb
 
@@ -19,7 +20,7 @@ param(
     [string]$WorkshopRoot = "C:\Users\snapp\Documents\Github\Workshop\2026-Sep-NBML-eye-tracking",
     [string]$CourseFolderName = "eye-tracking-course",
     [string]$RepoUrl = "https://github.com/Ali-Mahdipour/eye-tracking-course.git",
-    [string]$Branch = "cursor/analysis-training-sessions-feaa",
+    [string]$Branch = "cursor/fixation-classification-teaching-8573",
     [string]$ZipFallback = ""
 )
 
