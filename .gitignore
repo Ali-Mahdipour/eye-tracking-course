@@ -47,6 +47,5 @@ vignettes/*.pdf
 .Renviron
 *.Rproj
 
-# Local full Food Decision Making analysis (not for GitHub)
-workshop/private_food_decision_analysis/
+# Large Tobii sample-level export (keep local / Desktop copy; too large for git)
 Data/food_decision_making/Food Decision Making Data Export.tsv

@@ -1,0 +1,4 @@
+recording,participant,n_eye_samples,gaze_valid_frac,pupil_valid_frac,n_mouse_events,foods_present,n_foods,pipeline_eligible
+Recording1,p01,5384,0.931,0.915,16,"cake, cereal, date, ice-cream, pizza",5,True
+Recording2,P2,6319,0.946,0.895,16,"cake, cereal, date, ice-cream, pizza",5,True
+Recording3,p03,6536,0.946,0.903,16,"cake, cereal, date, ice-cream, pizza",5,True
